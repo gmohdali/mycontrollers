@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div ng-app="myApp1">
+
+<input type="text" ng-model="fname" >
+<input type="text" ng-model="sname" >
+
+<br>
+
+Full name: {{fname + "" + sname}}
+	
+    
+<!-- ontroller start here     -->
+</br>
+
+<div ng-controller="detailsCtrl">
+     <input type="text" ng-model="fname1" >
+     <input type="text" ng-model="sname1" >
+     <input type="text" ng-model="sname" >
+
+        <br>
+
+     Full name: {{fname1 + "" + sname1}}
+     Process: <input type="submit" value="process" ng-click="process()">
+	
+</div>  
+
+
+ 
+
+</div>    <!-- end of app --> 
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+ 
+
+<script type="text/javascript" src="../js/angular.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+</html>

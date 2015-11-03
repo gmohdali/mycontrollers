@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div ng-app="myApp1">
+
+
+<!-- ontroller 01 start here     -->
+</br>
+<div ng-controller="detailsCtrl">
+     <input type="text" ng-model="fname1" >
+     <input type="text" ng-model="sname1" >
+         <br>
+1C Full name: {{fname1 + "" + sname1}};
+<br>
+<form ng-submit="process()">        
+<input type="submit" value="pressInput1">
+<br>
+</div>    <!-- end of child app --> 
+
+
+
+
+<!-- ontroller2 $scope2(child2) start here     -->
+</br></br>
+<div ng-controller="detailsCtrl2">
+     <input type="text" ng-model="fname1" >
+     <input type="text" ng-model="sname1" >
+       <br>
+2C Full name: {{fname1 + "" + sname1}};
+<br>
+<form ng-submit="process()">        
+<input type="submit" value="pressInput1">
+<br>
+</form>
+</div>
+<!-- ontroller2 $scope2 end here     -->
+
+</div>   <!-- end of root scope app-->
+
+
+
+
+ 
+
+<script type="text/javascript" src="../js/angular.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+</html>
